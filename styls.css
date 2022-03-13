@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Lato', sans-serif;
     padding: 0;
@@ -212,6 +216,97 @@ nav{
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
 }
 
+.payment{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 20;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    box-shadow: -1px 14px 10px 14px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 14px 10px 14px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 14px 10px 14px rgba(0,0,0,0.75);
+}
+
+.payTitle{
+    font-size: 20px;
+    color: rgb(219, 218, 218);
+}
+
+label{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.PayInput{
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid gray ;
+}
+
+.PayInput::placeholder{
+    color: rgb(187, 184, 184);
+}
+
+.cardIcons{
+    display: flex;
+}
+
+.cardIcon{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.cardInfo{
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.PayInput .sm{
+    width: 30%;
+}
+
+.payBtton{
+    position: absolute;
+    height: 40px;
+    bottom: -40px;
+    width: 100%;
+    left: 0%;
+    box-shadow: -1px 14px 10px 14px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 14px 10px 14px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 14px 10px 14px rgba(0,0,0,0.75);
+     background-color: rgb(3, 128, 3);
+     color: white;
+     border: none;
+     cursor: pointer;
+}
+
+.close{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+
 .productImg{
     width: 30%;
 }
@@ -257,10 +352,21 @@ nav{
 /* NEED TO FIX THE BORDER RADIUS */
 .sizes{
     padding: 5px 0px;
-    border-radius: 5px solid black;
-    margin-right: 10px;
     cursor: pointer;
     font-size: 20px;
+
+    
+}
+
+.size{
+    justify-content: space-between;
+    border-radius: 5px solid black;
+    background-color: black;
+    color: white;
+    gap: 20px;
+    margin-right: 10px;
+
+
 }
 
 .productBtn{
@@ -277,13 +383,66 @@ nav{
     color: #111;
 }
 
+.gallery{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
 
+/* .galleryTitle{
+    display: flex;
+    text-align: center;
+} */
+
+.galleryIterm{
+    width: 33%;
+}
+
+.galleryIMG{
+    width: 100%;
+    /* padding: 50px; */
+}
+
+.NWseason{
+    display: flex;
+}
+
+.NWseasonIterm{
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.NWseasonIMG{
+    width: 100%;
+    height: 400px;
+
+}
+.NSTitle{
+    font-size: 40px;
+}
+
+.NsBtn{
+    
+}
+
+
+
+
+
+               /* jewelrys content */
 /* .jewelrys{
     background-color: blue;
     padding-top: 0%;
 } */
 
-.prod{
+/* .prod{
     background-repeat: no-repeat;
     position: relative;
     background-size: 77rem;
@@ -384,4 +543,4 @@ font-size:  45px;
 
 .featureImg{
     color: green;
-}
+} */

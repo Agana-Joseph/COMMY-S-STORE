@@ -112,17 +112,51 @@ item.addEventListener("click", ()=>{
 
     // Assigin new colors
     currentProductColors.forEach((color, index)=> {
-        color.style.backgroungcolor = ChoosenProduct.colors[index].code;
+        color.style.backgroundcolor = ChoosenProduct.colors[index].code;
     });
 });
 });
 
 
-currentProductColors.forEach((color, index) => {
-  color.addEventListener("click", () => {
+currentProductColors.forEach((colors, index) => {
+  colors.addEventListener("click", () => {
     currentProductImg.src = ChoosenProduct.colors[index].img;
   });
 });
+
+currentProductSizes.forEach((size,index) => {
+    size.addEventListener("click", ()=>{
+        currentProductSizes.forEach(size=>{
+
+            size.style.backgroundcolor="white"
+      size.style.color = "black"
+        });
+      size.style.backgroundcolor="black"
+      size.style.color = "white"
+  });
+});
+
+
+
+const productBtn = document.querySelector(".productBtn");
+const payment = document.querySelector(".payment");
+const close =  document.querySelector(".close");
+ 
+productBtn.addEventListener("click",() =>  {
+    payment.style.display="flex";
+});
+
+
+close.addEventListener("click",()=> {
+    payment.style.display="none";
+});
+
+// productBtn.addEventListener("click,",()=>{
+//     payment.style.display="flex"
+// })
+
+
+
 
 
 

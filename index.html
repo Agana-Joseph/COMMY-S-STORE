@@ -15,7 +15,7 @@
  <!-- <link rel="stylesheet" href="dom.js"> -->
 </head>
 <body>
-   <nav>
+   <nav id="NAVE">
        <div class="navTop">
        <div class="Navitem">
            .Sneakers
@@ -46,35 +46,44 @@
                <div class="sliderBg"></div>
                <h1 class="sliderTitle">AIR FORCE <br> NEW<br> SEASON</h1>
                <h2 class="sliderPric">$119</h2>
-               <button class="BuyBTN">BUY NOW</button>
+               <a href="#product">
+                <button class="BuyBTN">BUY NOW</button>
+            </a>
            </div>
            <div class="sliderItem">
             <img src="img/airfocre wiht.jpg" alt="" class="imm">
             <div class="sliderBg"></div>
             <h1 class="sliderTitle">AIR FORCE <br> NEW<br> SEASON</h1>
             <h2 class="sliderPric">$149</h2>
-            <button class="BuyBTN">BUY NOW</button>
+            <a href="#product">
+                <button class="BuyBTN">BUY NOW</button>
+            </a>
         </div>
         <div class="sliderItem">
             <img src="img/a leg4.jpg" alt="" class="imm">
             <div class="sliderBg"></div>
             <h1 class="sliderTitle">AIR FORCE <br> NEW<br> SEASON</h1>
             <h2 class="sliderPric">$109</h2>
+            <a href="#product">
             <button class="BuyBTN">BUY NOW</button>
+        </a>
         </div>
         <div class="sliderItem">
             <img src="img/a leg7.jpg" alt="" class="imm">
             <div class="sliderBg"></div>
             <h1 class="sliderTitle">AIR FORCE <br> NEW<br> SEASON</h1>
             <h2 class="sliderPric">$129</h2>
-            <button class="BuyBTN">BUY NOW</button>
-        </div>
+            <a href="#product">
+                <button class="BuyBTN">BUY NOW</button>
+            </a>        </div>
         <div class="sliderItem">
             <img src="img/a leg99.jpg" alt="" class="imm">
             <div class="sliderBg"></div>
             <h1 class="sliderTitle">AIR FORCE <br> NEW<br> SEASON</h1>
             <h2 class="sliderPric">$119</h2>
-            <button class="BuyBTN">BUY NOW</button>
+            <a href="#product">
+                <button class="BuyBTN">BUY NOW</button>
+            </a>
         </div>
        </div>
    </div>
@@ -104,7 +113,7 @@
     </div>
    </div>
 
-   <div class="product">
+   <div class="product" id="product">
        <img class="productImg" src="img/jordan.jpg" alt="">
        <div class="productDetail">
            <h1 class="productTitle"> AIR FORCE</h1>
@@ -123,6 +132,57 @@
             </div>
             <button class="productBtn">BUY NOW</button>
         </div>
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and surname</label>
+            <input type="text" placeholder="JOESMILTH" class="PayInput">
+            <label>phone number</label>
+            <input type="text" placeholder="+234 0826 596 857" class="PayInput">
+            <label>your address</label>
+            <input type="text" placeholder=" no:23 milton crescent" class="PayInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img class="cardIcon" src="img/visa.jpg" alt="">
+                <img class="cardIcon" src="img/masterCard.jpg" alt="">
+            </div>
+            <input class="PayInput " type="pasword" placeholder="card Number">
+            <div class="cardInfo">
+            <input class="PayInput sm" type="text" placeholder="mm">
+            <input class="PayInput sm" type="text" placeholder="yyy">
+            <input class="PayInput sm" type="text" placeholder="cvv">
+        </div>
+        <button class="payBtton">Checkout!</button>
+        <span class="close">X</span>
+        </div>
+   </div>
+   <div class="gallery">
+       <div class="galleryIterm">
+           <h1 class="galleryTitle">Be yourself</h1>
+           <img class="galleryIMG" src="img/a guy.jpg" alt="">
+       </div>
+       <div class="galleryIterm">
+        <img class="galleryIMG" src="img/a lady.jpg" alt="">
+        <h1 class="galleryTitle">This is the first day of your new life</h1>
+    </div>
+    <div class="galleryIterm">
+        <h1 class="galleryTitle">Just do it</h1>
+        <img class="galleryIMG" src="img/step out.jpg" alt="">
+    </div>
+   </div>
+   <div class="NWseason">
+       <div class="NWseasonIterm">
+           <img class="NWseasonIMG" src="img/up jump.jpg" alt="">
+       </div>
+       <div class="NWseasonIterm">
+           <h3 class="NSTitleSm">WINTER NEW ARIVALS</h3>
+           <h1 class="NSTitle">New Season</h1>
+           <a href="#NAVE">
+               <button class="NsBtn">CHOSE YOUR STYLE</button>
+           </a>
+       </div>
+       <div class="NWseasonIterm">
+        <img class="NWseasonIMG" src="img/up stand.jpg" alt="">
+    </div>
    </div>
 
 
@@ -140,7 +200,7 @@
           <li>cap</li>
         </ul>
     </div> -->
-    <div class="jewelrys">
+    <!-- <div class="jewelrys">
     <div  class="prod">
       <div class="TIT">
           <p class="tittle">Our Store</p>
@@ -200,7 +260,7 @@
     <button onclick="like('heart like button')" class="harrrt">
         <i class="fa fa-heart" id="heartlikebutton"></i>
     </button>
-</div>
+</div> -->
 
 <!-- <i class="fas fa-house" id="hus"></i> -->
     
